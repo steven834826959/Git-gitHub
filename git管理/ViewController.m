@@ -28,10 +28,15 @@
     
     [self.view addSubview:button];
     
+    
+    
+    
+    
 }
 
 - (void)buttonClick:(UIButton *)sender {
     NSLog(@"buton clicked");
+    NSLog(@"this is a button");
 }
 
 @end
