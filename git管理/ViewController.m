@@ -23,14 +23,15 @@
     
     UIButton *button = [[UIButton alloc]initWithFrame:CGRectMake(10, 20, 100, 40)];
     [button setTitle:@"click" forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
+
     
     [self.view addSubview:button];
     
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)buttonClick:(UIButton *)sender {
+    NSLog(@"buton clicked");
 }
 
 @end
